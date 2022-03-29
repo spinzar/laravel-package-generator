@@ -46,12 +46,12 @@ With interactive `-i` flag you will be prompted for every needed value from you.
 
 Remove the existing package.
 
-Example: `php artisan package:remove Spinzar SomeAwesomePackage`
+Example: `php artisan package:remove Spinzar BalanceSheet`
 
 This command will:
 
-* Run `composer remove spinzar/some-awesome-package`
-* Remove `packages/spinzar/some-awesome-package` folder
+* Run `composer remove spinzar/balance-sheet`
+* Remove `packages/spinzar/balance-sheet` folder
 * Unregister package in app composer.json
 * Run `composer dump-autoload`
 
@@ -69,19 +69,19 @@ Available variables to use in templates:
 * vendor (e.g. Spinzar)
 * package (e.g. SomeAwesomePackage)
 * vendorFolderName (e.g. spinzar)
-* packageFolderName (e.g. some-awesome-package)
-* packageHumanName (e.g. Some awesome package)
-* composerName (e.g. spinzar/some-awesome-package)
-* composerDesc (e.g. A some awesome package)
-* composerKeywords (e.g. some,awesome,package)
+* packageFolderName (e.g. balance-sheet)
+* packageHumanName (e.g. balance-sheet)
+* composerName (e.g. spinzar/balance-sheet)
+* composerDesc (e.g. A balance sheet)
+* composerKeywords (e.g. balance,sheet)
 * licence (e.g. MIT)
 * phpVersion (e.g. >=7.0)
-* aliasName (e.g. some-awesome-package)
-* configFileName (e.g. some-awesome-package)
+* aliasName (e.g. balance-sheet)
+* configFileName (e.g. balance-sheet)
 * year (e.g. 2022)
 * name (e.g. Nassim Nasibullah)
 * email (e.g. spinzar.inc@gmail.com)
-* githubPackageUrl (e.g. https://github.com/spinzar/some-awesome-package)
+* githubPackageUrl (e.g. <https://github.com/spinzar/balance-sheet>)
 
 ## Things you need to do manually:
 

@@ -44,7 +44,7 @@ trait ChangesComposerJson
             $this->info('Composer repository for package is already registered.');
         }
 
-        Arr::set($composerJson, "require.$vendor/$package", 'dev-master');
+        Arr::set($composerJson, "require.$vendor/$package", 'dev-main');
 
         $this->saveComposerJson($composerJson);
 

@@ -28,16 +28,16 @@ php artisan vendor:publish --provider="Spinzar\LaravelPackageGenerator\ServicePr
 
 Create new package.
 
-Example: `php artisan package:new Spinzar SomeAwesomePackage`
+Example: `php artisan package:new Spinzar IncomeStatement`
 
 This command will:
 
-* Create `packages/spinzar/some-awesome-package` folder
+* Create `packages/spinzar/income-statement` folder
 * Register package in app composer.json
 * Copy package skeleton from skeleton folder to created folder (you can provide
 your custom skeleton path in config)
-* Run `git init packages/spinzar/some-awesome-package`
-* Run `composer update spinzar/some-awesome-package`
+* Run `git init packages/spinzar/income-statement`
+* Run `composer update spinzar/income-statement`
 * Run `composer dump-autoload`
 
 With interactive `-i` flag you will be prompted for every needed value from you.
@@ -46,12 +46,12 @@ With interactive `-i` flag you will be prompted for every needed value from you.
 
 Remove the existing package.
 
-Example: `php artisan package:remove Spinzar BalanceSheet`
+Example: `php artisan package:remove Spinzar IncomeStatment`
 
 This command will:
 
-* Run `composer remove spinzar/balance-sheet`
-* Remove `packages/spinzar/balance-sheet` folder
+* Run `composer remove spinzar/income-statement`
+* Remove `packages/spinzar/income-statement` folder
 * Unregister package in app composer.json
 * Run `composer dump-autoload`
 
@@ -69,19 +69,19 @@ Available variables to use in templates:
 * vendor (e.g. Spinzar)
 * package (e.g. SomeAwesomePackage)
 * vendorFolderName (e.g. spinzar)
-* packageFolderName (e.g. balance-sheet)
-* packageHumanName (e.g. balance-sheet)
-* composerName (e.g. spinzar/balance-sheet)
+* packageFolderName (e.g. income-statement)
+* packageHumanName (e.g. income-statement)
+* composerName (e.g. spinzar/income-statement)
 * composerDesc (e.g. A balance sheet)
 * composerKeywords (e.g. balance,sheet)
 * licence (e.g. MIT)
 * phpVersion (e.g. >=7.0)
-* aliasName (e.g. balance-sheet)
-* configFileName (e.g. balance-sheet)
+* aliasName (e.g. income-statement)
+* configFileName (e.g. income-statement)
 * year (e.g. 2022)
 * name (e.g. Nassim Nasibullah)
 * email (e.g. spinzar.inc@gmail.com)
-* githubPackageUrl (e.g. <https://github.com/spinzar/balance-sheet>)
+* githubPackageUrl (e.g. <https://github.com/spinzar/income-statement>)
 
 ## Things you need to do manually:
 

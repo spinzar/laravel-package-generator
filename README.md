@@ -20,7 +20,9 @@ composer require --dev spinzar/laravel-package-generator
 Publish package config if you want customize default values
 ```bash
 php artisan vendor:publish --provider="Spinzar\LaravelPackageGenerator\ServiceProvider" --tag="config"
-```
+
+
+``````
 
 ## Available commands
 
@@ -28,6 +30,18 @@ php artisan vendor:publish --provider="Spinzar\LaravelPackageGenerator\ServicePr
 
 Create new package.
 
+```bash
+php artisan package:new Spinzar Language
+```
+or
+
+```bash
+php artisan package:new Spinzar Setting
+```
+or
+```bash
+php artisan package:new Spinzar Version
+```
 Example: `php artisan package:new Spinzar IncomeStatement`
 
 This command will:
